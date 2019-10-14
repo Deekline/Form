@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <title>My Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <header class="main-title">
+        <div class="wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24px"
+            height="25px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="rgb(223, 38, 113)"
+              d="M22.043,2.906 C19.466,0.322 15.281,0.323 12.701,2.907 C10.843,4.771 10.346,7.465 11.168,9.796 L1.359,19.627 L0.021,23.641 L4.027,24.978 L5.221,23.641 L9.085,22.302 L9.085,19.628 L10.558,18.291 L11.964,19.628 L14.668,16.952 L13.351,15.615 L15.162,13.806 C17.491,14.634 20.183,14.136 22.043,12.271 C24.624,9.687 24.624,5.492 22.043,2.906 ZM18.878,8.226 C17.696,8.226 16.736,7.263 16.736,6.078 C16.736,4.894 17.696,3.931 18.878,3.931 C20.060,3.931 21.021,4.894 21.021,6.078 C21.021,7.263 20.060,8.226 18.878,8.226 Z"
+            />
+          </svg>
+          <h1 class="main-title__title">Create your free account</h1>
+        </div>
+        <p class="main-title__description">
+          Come and join our cool and amazing community, fill in your details to
+          get started. Already have an account? <a href="#">Log in.</a>
+        </p>
+      </header>
+      <section class="main-form">
+        <form action="#" method="post" id="register">
+          <div class="main-form__name">
+            <input type="text" placeholder="First name" required />
+            <input type="text" placeholder="Second name" required />
+          </div>
+          <input type="email" placeholder="Email adress" required />
+          <input type="password" placeholder="Password" required />
+        </form>
+      </section>
+      <section class="main-button">
+        <button
+          type="submit"
+          form="register"
+          formmethod="POST"
+          formtarget="_blank"
+        >
+          Sign up for free
+        </button>
+      </section>
+      <footer class="main-discription">
+        <p>
+          By clicking on "Sign up for free", you agree to the
+          <a href="#">Terms of service</a> and the
+          <a href="#">Privacy Policy</a>
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>
